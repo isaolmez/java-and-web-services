@@ -1,0 +1,46 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+	<!-- For JAX-RS sample -->
+	<!-- There is no servlet mapping for JAX-RS. Why? -->
+	<servlet>
+		<servlet-name>jersey</servlet-name>
+		<servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
+		<load-on-startup>1</load-on-startup><!-- Specifies to run ServletContainer 
+			on startup. The ServletContainer scans war file for Jersey Applications -->
+	</servlet>
+
+	<!-- For Servlet Sample -->
+	<!-- <servlet>
+		<servlet-name>predictor</servlet-name>
+		<servlet-class>com.isa.rest.service.servlet.PredictionsServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>predictor</servlet-name>
+		<url-pattern>/servlet/*</url-pattern>
+	</servlet-mapping> -->
+
+	<!-- Restlet adapter -->
+	<servlet>
+		<servlet-name>RestletServlet</servlet-name>
+		<servlet-class>org.restlet.ext.servlet.ServerServlet</servlet-class>
+		<init-param>
+			<!-- Application class name -->
+			<param-name>org.restlet.application</param-name>
+			<param-value>com.isa.rest.service.restlet.AdagesApplication</param-value>
+		</init-param>
+	</servlet>
+
+	<!-- Dispach all requests to the Restlet servlet. -->
+	<servlet-mapping>
+		<servlet-name>RestletServlet</servlet-name>
+		<url-pattern>/restlet/*</url-pattern>
+	</servlet-mapping>
+	
+		<!-- For JSP Sample -->
+	<welcome-file-list>
+		<welcome-file>predictions.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

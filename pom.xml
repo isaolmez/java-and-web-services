@@ -9,7 +9,7 @@
 
 	<!-- Properties -->
 	<properties>
-		<jdkVersion>1.7</jdkVersion>
+		<jdkVersion>1.8</jdkVersion>
 		<junit.version>4.8.2</junit.version>
 	</properties>
 
@@ -82,6 +82,14 @@
 			<artifactId>jersey-client</artifactId>
 			<version>1.19</version>
 		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.glassfish.metro/metro-runtime-api -->
+		<dependency>
+			<groupId>org.glassfish.metro</groupId>
+			<artifactId>metro-runtime-api</artifactId>
+			<version>2.3.1</version>
+		</dependency>
+
 	</dependencies>
 	<!-- Build Config -->
 	<build>
@@ -103,9 +111,8 @@
 				<version>9.3.0.M1</version>
 				<configuration>
 					<scanIntervalSeconds>10</scanIntervalSeconds>
-<!-- 					<webApp>
-						<contextPath>/webservice</contextPath>
-					</webApp> -->
+					<!-- <webApp> <contextPath>/rest</contextPath> </webApp> -->
+					<webApp> <contextPath>/soap</contextPath> </webApp>
 					<httpConnector>
 						<port>8080</port>
 					</httpConnector>
