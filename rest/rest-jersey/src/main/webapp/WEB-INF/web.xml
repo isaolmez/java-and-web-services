@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+    <!--Adage Application-->
+    <servlet>
+        <servlet-name>com.isa.rest.service.jaxrs.adage.AdageApplication</servlet-name>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>com.isa.rest.service.jaxrs.adage.AdageApplication</servlet-name>
+        <url-pattern>/adage/*</url-pattern>
+    </servlet-mapping>
+
+    <!--Prediction Application-->
+    <servlet>
+        <servlet-name>com.isa.rest.service.jaxrs.prediction.PredictionApplication</servlet-name>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>com.isa.rest.service.jaxrs.prediction.PredictionApplication</servlet-name>
+        <url-pattern>/prediction/*</url-pattern>
+    </servlet-mapping>
+</web-app>

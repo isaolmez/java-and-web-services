@@ -11,7 +11,7 @@ import org.restlet.routing.Router;
 public class AdagesApplication extends Application {
 	@Override
 	public synchronized Restlet createInboundRoot() {
-		// To illlustrate the different API possibilities, implement the
+		// To illustrate the different API possibilities, implement the
 		// DELETE operation as an anonymous Restlet class. For the
 		// remaining operations, follow Restlet best practices and
 		// implement each as a Java class.

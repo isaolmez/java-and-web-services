@@ -1,4 +1,4 @@
-package com.isa.ws.client;
+package com.isa.client;
 
 import java.io.BufferedReader;
 import java.io.IOException;
