@@ -1,6 +1,0 @@
-curl --request GET http://localhost:8080/restlet/
-curl --request GET http://localhost:8080/restlet/xml
-curl --request GET http://localhost:8080/restlet/json
-curl --request GET http://localhost:8080/restlet/xml/2
-curl --request POST --data "words=This is a test" http://localhost:8080/restlet/create
-curl --request DELETE http://localhost:8080/restlet/delete/6

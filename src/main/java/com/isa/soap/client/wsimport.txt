@@ -1,1 +1,0 @@
-wsimport -p client -keep http://localhost:8888/rs?wsdl
