@@ -1,11 +1,11 @@
 package com.isa.rest.service.jaxrs.adage.common;
 
-public final class Constants {
+public class Constants {
   private Constants() {}
 
   public static final String EMPTY = "";
 
-  public static final class Adage {
+  public static class Adage {
     private Adage() {}
 
     public static final int PORT = 9091;
@@ -19,7 +19,7 @@ public final class Constants {
     public static final String RESOURCE_URL = "http://localhost:" + PORT + RESOURCE_CONTEXT;
   }
 
-  public static final class Prediction {
+  public static class Prediction {
     private Prediction() {}
 
     public static final int PORT = 9091;
