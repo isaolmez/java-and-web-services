@@ -1,5 +1,6 @@
 # Java Web Services
-Provides example projects for
+Provides example projects for the following topics.	
+
 RESTful Services:
 - JAX-RS (Jersey)
 - Restlet
