@@ -9,7 +9,7 @@
     <packaging>war</packaging>
 
     <properties>
-        <jdkVersion>1.8</jdkVersion>
+        <jdk.version>1.8</jdk.version>
         <assertj.version>3.6.2</assertj.version>
         <restlet.version>2.3.7</restlet.version>
     </properties>
@@ -60,8 +60,8 @@
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>${jdkVersion}</source>
-                    <target>${jdkVersion}</target>
+                    <source>${jdk.version}</source>
+                    <target>${jdk.version}</target>
                 </configuration>
             </plugin>
 

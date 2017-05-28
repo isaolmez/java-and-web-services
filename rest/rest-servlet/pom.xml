@@ -9,7 +9,7 @@
     <packaging>war</packaging>
 
     <properties>
-        <jdkVersion>1.8</jdkVersion>
+        <jdk.version>1.8</jdk.version>
         <junit.version>4.8.2</junit.version>
         <javax.servlet-api>3.1.0</javax.servlet-api>
         <javax.jsp-api>2.3.1</javax.jsp-api>
@@ -55,8 +55,8 @@
             <plugin>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>${jdkVersion}</source>
-                    <target>${jdkVersion}</target>
+                    <source>${jdk.version}</source>
+                    <target>${jdk.version}</target>
                 </configuration>
             </plugin>
 
