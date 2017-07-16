@@ -7,6 +7,7 @@ RESTful Services:
 - Servlet
 - JSP
 
+In progress =>
 SOAP Web Services and Handlers
 
 Web Service Clients
